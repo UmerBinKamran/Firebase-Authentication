@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="auth-card">
+      <h2>Phone Verification</h2>
+      <div class="field">
+        <label>Phone Number</label>
+        <input type="text" id="phone" placeholder="+92XXXXXXXXXX" />
+      </div>
+
+      <div id="recaptcha-container"></div>
+
+      <button id="sendOtpBtn">Send OTP</button>
+
+      <div class="field" style="margin-top: 10px">
+        <input type="text" id="otp" placeholder="Enter OTP" />
+      </div>
+
+      <button id="verifyOtpBtn">Verify OTP</button>
+      <p id="msg"></p>
+    </div>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="phoneAuth.js"></script>
+  </body>
+</html>
